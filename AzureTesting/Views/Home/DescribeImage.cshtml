@@ -1,0 +1,16 @@
+﻿<h1>Describe image</h1>
+
+@Html.Partial("_Help")
+
+<form id="postImage" action="@Url.Action("GetDescription")">
+    <div class="row">
+        <label for="image">Image</label>
+        <input type="file" name="image" id="image" required="required" />
+    </div>
+    <input type="submit" />
+    <span class="uploadStatus"></span>
+</form>
+
+<div id="imageResult">
+
+</div>

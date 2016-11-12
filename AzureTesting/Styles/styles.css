@@ -1,0 +1,9 @@
+﻿main {
+    max-width: 1200px;
+    margin: auto;
+    font-family: helvetica, calibri, sans-serif;
+}
+
+.row {
+    margin: 1em 0;
+}

@@ -1,0 +1,24 @@
+﻿<h1>Create smart thumbnail</h1>
+
+@Html.Partial("_Help")
+
+<form id="postImage" action="@Url.Action("GetThumbnail")">
+    <div class="row">
+        <label for="image">Image</label>
+        <input type="file" name="image" id="image" required="required" />
+    </div>
+    <div class="row">
+        <label for="width">Width</label>
+        <input type="number" min="1" max="1024" name="width" id="width" value="100" required="required"/> px
+    </div>
+    <div class="row">
+        <label for="height">Height</label>
+        <input type="number" min="1" max="1024" name="height" id="height" value="100" required="required"/> px
+    </div>
+    <input type="submit"/>
+    <span class="uploadStatus"></span>
+</form>
+
+<div id="imageResult">
+    
+</div>
